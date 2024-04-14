@@ -38,6 +38,14 @@ class account
         type_of_account = typeofacc;
         pin = pc;
     }
+
+    //Function to calculate interest
+    float calculate_interest(){
+        //assuming interest rate is 16%
+        float interest_rate = 0.16;
+        float interest = balance * interest_rate;
+        return interest;
+    }
 };
 vector<account>accts;
 
